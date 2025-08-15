@@ -18,6 +18,12 @@ app.get('/', (req, res) => {
   res.send('Backend läuft!');
 });
 
+// Middleware for error handling
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Etwas ist schiefgelaufen!');
+});
+
 // Server starten und Port-Überwachung
 app.listen(PORT, () => {
   console.log(`Server läuft auf Port ${PORT}`);
