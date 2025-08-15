@@ -17,6 +17,7 @@
     "concurrently": "^5.3.0"
   },
   "devDependencies": {},
+  "eslintConfig": { "env": { "browser": true, "es2021": true }, "extends": "eslint:recommended", "parserOptions": { "ecmaVersion": 12 }, "rules": {} },
   "keywords": [],
   "author": "Dein Name",
   "license": "MIT"
